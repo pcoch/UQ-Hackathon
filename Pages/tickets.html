@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/Images/logo.svg" />
+    <script src="/js/script.js" defer></script>
+    <title>Tickets</title>
+  </head>
+  <body>
+    <header class="center-container">
+      <section class="top-bar">
+        <div>
+          <p>17 - 18 of July, 2023 - Brisbane, QLD</p>
+        </div>
+        <div>
+          <p>180 Registered<span class="dot">●</span></p>
+        </div>
+      </section>
+      <!-- desktop menu -->
+      <div>
+        <nav>
+          <div>
+            <a href="../index.html"
+              ><img class="logo" src="/Images/logo.svg"
+            /></a>
+            <a class="rmv-dec" href="../index.html"><h5>UQ Hackathon</h5></a>
+          </div>
+          <ul class="desktop-menu">
+            <li class="nav-link">
+              <a href="/Pages/schedule.html">Schedule</a>
+            </li>
+            <li class="nav-link">
+              <a href="/Pages/speakers.html">Speakers</a>
+            </li>
+            <li class="nav-link"><a href="/Pages/FAQ.html">FAQ</a></li>
+            <li class="nav-link"><a href="/Pages/contact.html">Contact</a></li>
+            <a class="ticket-btn" href="/Pages/tickets.html">
+              <li>Get Tickets</li>
+            </a>
+          </ul>
+          <img class="menu-btn" src="/Images/menu.svg" alt="open-menu" />
+        </nav>
+      </div>
+      <!-- mobile menu -->
+      <div class="overlay"></div>
+      <nav class="mobile-menu">
+        <ul>
+          <li class="nav-link"><a href="/Pages/schedule.html">Schedule</a></li>
+          <li class="nav-link"><a href="/Pages/speakers.html">Speakers</a></li>
+          <li class="nav-link"><a href="/Pages/FAQ.html">FAQ</a></li>
+          <li class="nav-link"><a href="/Pages/contact.html">Contact</a></li>
+          <li class="nav-link">
+            <a href="/Pages/tickets.html">Get Tickets</a>
+          </li>
+        </ul>
+        <button class="unset">
+          <img class="close-btn" src="/Images/close.svg" alt="close-menu" />
+        </button>
+      </nav>
+    </header>
+    <main class="center-container">
+      <section>
+        <h2>Checkout</h2>
+        <section class="checkout-container">
+          <section class="info-container">
+            <section class="info-top">
+              <img src="/Images/ticket.png" alt="ticket-emoji" />
+              <div>
+                <h5>UQ Hackathon Ticket <span class="price">($10)</span></h5>
+                <p>17 - 18 July</p>
+                <div class="qty-component">
+                  <button id="minus">-</button>
+                  <span id="qty">0</span>
+                  <button id="add">+</button>
+                </div>
+              </div>
+              <div>
+                <p class="ticket-price">AUD <span>$10</span></p>
+              </div>
+            </section>
+            <section>
+              <p id="alert" class="warning">
+                <span
+                  ><img class="warning-icon" src="/Images/warning.svg" /></span
+                >Maximum 5 tickets per person.
+              </p>
+              <div class="info-bottom">
+                <h5>Total</h5>
+                <h5 class="total-price">AUD $<span id="total">0</span></h5>
+              </div>
+            </section>
+          </section>
+          <section class="form-container">
+            <h5>Contact Information</h5>
+            <form id="checkout">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+              <button id="buy" type="submit">
+                <span id="checkout-button-text">Reserve Tickets</span>
+                <div id="spinner" class="lds-ellipsis">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </button>
+              <p class="ticket-info">Payment is required on the day.</p>
+            </form>
+          </section>
+        </section>
+      </section>
+      <footer>
+        <section>
+          <img class="logo" src="/Images/logo.svg" />
+          <ul>
+            <li>
+              <a href="https://www.github.com/"
+                ><img src="/Images/github.svg" alt="Github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/"
+                ><img src="/Images/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.discord.com/"
+                ><img id="svg" src="/Images/discord.svg" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <p>Copyright University of Queensland, 2023</p>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
